@@ -1,17 +1,17 @@
 ---
 title: "Writing Prompt - The Death Cinema"
 author: "Giles"
-date: 2020-07-26T20:08:02+05:30
+date: 2019-07-26T20:08:02+05:30
 draft: false
-tags: ["writingprompts"]
-categories: ["writingprompts"]
-summary: When you die, you appear in a cinema with a number of other people who look like you. You find out that they are your previous reincarnations, and soon you all begin watching your next life on the big screen.
+tags: ["writingprompt"]
+categories: ["writingprompt"]
+
 ---
 
+When you die, you appear in a cinema with a number of other people who look like you. You find out that they are your previous reincarnations, and soon you all begin watching your next life on the big screen.
 
-
-**When you die, you appear in a cinema with a number of other people who look like you. You find out that they are your previous reincarnations, and soon you all begin watching your next life on the big screen.**
-
+<!--more-->
+---
 
 I gradually regained consciousness and was immediately aware of an absolutely splitting headache. My god last night must have been a heavy one. I kept my eyes closed and concentrated on minimising the pain. I breathed out slowly and became vaguely aware that I was sitting up.
 

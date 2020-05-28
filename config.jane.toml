@@ -1,0 +1,61 @@
+baseURL = "https://gileshutton.com/"
+languageCode = "en-us"
+title = "Giles"
+theme = "future-imperfect"
+
+paginate = 3
+rssLimit = 20
+googleAnalytics = "UA-144845549-1"
+
+[author]
+  name = "Giles Hutton"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Categories"
+  weight = 20
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
+  name = "Prompts"
+  weight = 30
+  identifier = "prompts"
+  url = "/prompts/"
+[[menu.main]]
+  name = "Short Stories"
+  weight = 40
+  identifier = "shortstories"
+  url = "/stories/"
+[[menu.main]]
+  name = "World Building"
+  weight = 50
+  identifier = "worldbuilding"
+  url = "/worlds/"
+[[menu.main]]
+  name = "About"
+  weight = 60
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  since = "2019"
+  homeFullContent = false
+  rssFullContent = true
+
+  logoTitle = "On Writing"
+  dateFormatToUse = "2006-01-02"
+  keywords = ["Giles", "Hutton", "Writing"]
+
+[params.social]
+    a-email = "mailto:hutton.giles+web@gmail.com"
+    g-github = "http://github.com/Stringy/"
+    o-goodreads = "https://www.goodreads.com/user/show/91307502-giles-hutton"

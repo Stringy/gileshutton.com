@@ -4,8 +4,10 @@ author: "Giles"
 date: 2019-07-30
 draft: false
 tags: ["shortstory", "crime", "war"]
-categories: ["shortstories"]
-summary: A man attempts to defend his involvement in a war.
+categories: ["shortstory"]
+---
+A man attempts to defend his involvement in a war.
+<!--more-->
 ---
 
 “You know what, kid? I don’t give a damn what you think you’ve achieved or the amount of time in which you’ve achieved it. You’re young and therefore you’re about twenty years away from really knowing anything. Hell, I don’t even know jack shit now.” The man pulled hard on his pipe, letting the smoke rise in thick clouds around his head. His audience was getting bored of all the insults and holier-than-though rhetoric and he knew it.

@@ -3,13 +3,14 @@ title: "Writing Prompt - The Old Man and His Skills"
 author: "Giles"
 date: 2019-07-25
 draft: false
-tags: ["writingprompts"]
-categories: ["writingprompts"]
-summary: Human beings unlock skills as they grow up, walking, taking, etc. You are the oldest person in the history of the world, and today you unlock a skill no one ever had.
+tags: ["writingprompt"]
+categories: ["writingprompt"]
+
 ---
 
-**Human beings unlock skills as they grow up, walking, taking, etc. You are the oldest person in the history of the world, and today you unlock a skill no one ever had.**
+Human beings unlock skills as they grow up, walking, taking, etc. You are the oldest person in the history of the world, and today you unlock a skill no one ever had.
 
+<!--more-->
 ---
 
 No one really predicted the speed at which medical advances would happen. If I remember correctly, I was in my late sixties and had just been diagnosed with a nasty case of lung cancer. Way too many smokes in my youth, you know? Well, I just got lucky. The week after my diagnosis, some young upstart from the city was all over national TV raving about this new super drug that he’d developed. I figured I might be in with a shot with this one, so there I go, off to another young upstart in the form of my doctor and I bored the bones off him until he made some calls and prescribed me with the mother of all gobstoppers. Formaltin they called it. Stupid name if you ask me. It came not in a little bottle with a twisty cap, but in a vast blister pack. These suckers must have been about an inch long and half an inch wide. Twice a day with meals, my doctor had said, so I did my due diligence, knowing that either these worked or I ended up in the ground.
