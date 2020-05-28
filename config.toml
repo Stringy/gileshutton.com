@@ -4,20 +4,21 @@ baseurl                 = "https://gileshutton.com/"
 DefaultContentLanguage  = "en"
 title                   = "Giles"
 theme                   = "future-imperfect"
-paginate                = 5
+paginate                = 3
 disqusShortname         = ""
 googleAnalytics         = "UA-144845549-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
 
 [params]
+  mainSections          = ["writing", "coding"]
   enableCDN             = false
   cssFiles              = ["default"]
   jsFiles               = ["default"]
   highlightjs           = true
   highlightjsTheme      = "github"
-  highlightjsLang       = ["html", "css", "js", "toml"]
-  viewMorePostsLink     = "/writing/"
+  highlightjsLang       = ["html", "css", "js", "toml", "rust", "go", "cpp"]
+  viewMorePostsLink     = "/"
   readingTime           = true
   socialShare           = ["twitter", "facebook", "reddit", "linkedin",
                           "pinterest", "email"]
