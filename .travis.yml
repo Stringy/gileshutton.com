@@ -12,6 +12,7 @@ deploy:
   keep_history: true
   local_dir: public
   target_branch: master
+  fqdn: gileshutton.com
   repo: Stringy/stringy.github.io
   on:
     branch: master
