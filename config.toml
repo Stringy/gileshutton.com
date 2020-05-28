@@ -27,7 +27,7 @@ disableLanguages        = [""]
     author              = "Giles Hutton"
     favicon             = true
     svg                 = true
-    faviconVersion      = "1"
+    faviconVersion      = ""
     msColor             = "#ffffff"
     iOSColor            = "#ffffff"
 
