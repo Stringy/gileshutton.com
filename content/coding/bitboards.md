@@ -1,7 +1,7 @@
 ---
 title: "bitboards"
 date: 2020-05-31
-draft: true
+draft: false
 tags: ["coding", "chess", "bitboards"]
 categories: ["code"]
 summary: ""
