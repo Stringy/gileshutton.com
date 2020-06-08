@@ -33,17 +33,19 @@ Instead, with bitboards, you simply XOR the integer that represents the attacks 
 integer that represents all the black pieces:
 
 ```
-white bishop        Black Pieces        Attacked Black
-attacks from D4                         pieces
+     white bishop           Black Pieces           Attacked Black
+    attacks from D4                                pieces
 
-0 0 0 0 0 0 0 0     1 1 1 1 1 1 1 1     0 0 0 0 0 0 0 0
-1 0 0 0 0 0 1 0     1 0 0 1 1 0 1 1     0 0 0 0 0 0 0 0
-0 1 0 0 0 1 0 0     0 1 0 0 0 1 0 0     0 1 0 0 0 1 0 0
-0 0 1 0 1 0 0 0  ^  0 0 0 0 0 0 0 0  =  0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0
-0 0 1 0 1 0 0 0     0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0
-0 1 0 0 0 1 0 0     0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0
-1 0 0 0 0 0 1 0     0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0
+8 | 0 0 0 0 0 0 0 0     8 | 1 1 1 1 1 1 1 1     8 | 0 0 0 0 0 0 0 0
+7 | 0 0 0 0 0 0 0 0     7 | 1 0 0 1 1 0 1 1     7 | 0 0 0 0 0 0 0 0
+6 | 0 1 0 0 0 1 0 0     6 | 0 1 0 0 0 1 0 0     6 | 0 1 0 0 0 1 0 0
+5 | 0 0 1 0 1 0 0 0  ^  5 | 0 0 0 0 0 0 0 0  =  5 | 0 0 0 0 0 0 0 0
+4 | 0 0 0 0 0 0 0 0     4 | 0 0 0 0 0 0 0 0     4 | 0 0 0 0 0 0 0 0
+3 | 0 0 1 0 1 0 0 0     3 | 0 0 0 0 0 0 0 0     3 | 0 0 0 0 0 0 0 0
+2 | 0 1 0 0 0 1 0 0     2 | 0 0 0 0 0 0 0 0     2 | 0 0 0 0 0 0 0 0
+1 | 1 0 0 0 0 0 1 0     1 | 0 0 0 0 0 0 0 0     1 | 0 0 0 0 0 0 0 0
+   ----------------        ----------------        ----------------
+    A B C D E F G H         A B C D E F G H         A B C D E F G H
 ```
 
 A single operation (and indeed a single amd64 instruction) can perform an incredible amount of work. 
@@ -54,14 +56,16 @@ and the simplicity of the bitboard operations still saves us time during move ge
 Take the white pawns as an example. We have a bitboard that contains all the white pawns in their starting position:
 
 ```
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-1 1 1 1 1 1 1 1
-0 0 0 0 0 0 0 0
+8 | 0 0 0 0 0 0 0 0
+7 | 0 0 0 0 0 0 0 0
+6 | 0 0 0 0 0 0 0 0
+5 | 0 0 0 0 0 0 0 0
+4 | 0 0 0 0 0 0 0 0
+3 | 0 0 0 0 0 0 0 0
+2 | 1 1 1 1 1 1 1 1
+1 | 0 0 0 0 0 0 0 0
+   ----------------
+    A B C D E F G H
 ```
 
 We have masks for the moves that they can make in each of those positions, but we need to somehow iterate 
@@ -76,7 +80,7 @@ def get_white_pawn_moves(white_pawns):
     return moves
 ```
 
-The crux of this method is that for loop - how do we iterate over a 64 bit integer? Well, in most languages you can't 
+The crux of the function above is that for loop - how do we iterate over a 64 bit integer? Well, in most languages you can't 
 but what we can do is get the least significant bit of the bitboard and use that. By continually getting the LSB, 
 processing that piece, and then turning that bit off, we can effectively iterate over a bitboard. 
 Here's the pseudocode for the LSB use:
@@ -95,21 +99,21 @@ This process is the same for all the non-sliding pieces; iterate over the board 
 table and OR that mask with the current set of moves. Very simple, and very very quick. 
 
 Since I've been writing my new chess engine in Rust, I have tried to take advantage of some of the high-level, zero-cost
-abstractions that Rust provides. To solve the interger iteration problem, I have been able to implement the Iterator trait
+abstractions that Rust provides. To solve the integer iteration problem, I have been able to implement the Iterator trait
 for my bitboard type[^2]:
 
 ```rust
-pub struct bitboard(u64);
+pub struct Bitboard(u64);
 
-impl bitboard {
-    pub fn iter(&self) -> bitboardIter {
-        bitboardIter(self, bitboard(0))
+impl Bitboard {
+    pub fn iter(&self) -> BitboardIter {
+        BitboardIter(self, Bitboard(0))
     }
 }
 
-pub struct bitboardIter<'a>(&'a bitboard, bitboard);
+pub struct BitboardIter<'a>(&'a Bitboard, Bitboard);
 
-impl Iterator for BItboardIter<'_> {
+impl Iterator for BitboardIter<'_> {
     type Item = usize;
 
     fn next(&mut self) -> Option<Self::Item> {
@@ -141,7 +145,7 @@ it can make the code far simpler to reason about.
 
 Mask generation is the important part of bitboard usage. It _is_ computationally expensive, but it can all be performed
 either before-hand (as in my Rust engine, where I've pregenerated everything and I'm linking them directly into the library)
-or during engine initialisation (as in my Go engine.) Either method is similarly effective because ultimately the performance saving
+or during engine initialisation (as in my Go engine.) Either method is similarly effective because ultimately the performance savings
 you make during move generation and board evaluation is so significant, it massively out-weighs the downsides of having
 to generate all those masks.
 
