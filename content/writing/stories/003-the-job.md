@@ -1,6 +1,6 @@
 ---
 title: "The Job: Scene 3"
-date: 2020-05-28T16:41:46+01:00
+date: 2020-06-19
 draft: false
 tags: ["shortstory", "firstperson", "dark"]
 categories: ["shortstory"]

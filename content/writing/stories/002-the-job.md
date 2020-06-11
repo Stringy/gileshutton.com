@@ -1,6 +1,6 @@
 ---
 title: "The Job: Scene 2"
-date: 2020-05-28T16:35:11+01:00
+date: 2020-06-12
 draft: false
 tags: ["shortstory", "firstperson", "dark"]
 categories: ["shortstory"]

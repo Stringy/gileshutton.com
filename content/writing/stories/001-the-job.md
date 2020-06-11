@@ -1,6 +1,6 @@
 ---
 title: "The Job: Scene 1"
-date: 2020-05-28T16:34:59+01:00
+date: 2020-06-05
 draft: false
 tags: ["shortstory", "firstperson", "dark"]
 categories: ["shortstory"]
