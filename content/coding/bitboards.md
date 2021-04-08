@@ -1,5 +1,5 @@
 ---
-title: "bitboards"
+title: "Bitboards"
 date: 2020-05-31
 draft: false
 tags: ["coding", "chess", "bitboards"]
