@@ -31,7 +31,7 @@ Wisdom.
 
 So what is Wisdom going to look like? Hopefully a little like this[^1]:
 
-```wisdom
+```
 use std::fs;
 
 fn filter(path: str, re: regex) -> bool {
@@ -106,13 +106,13 @@ fn primes_slow(limit: int) {
 print("found: ", primes_slow(10000), " primes");
 ```
 
-Progress so far has been surprisingly quick, particularly over easter where I had plenty of time
+Progress so far has been surprisingly quick, particularly over Easter where I had plenty of time
 to churn out new features. It's probably the most satisfying project I've worked on so far, particularly
 because I can now use it to actually write useful programs. It started life as a glorified calculator,
 supporting single-line mathematical expressions, and has already grown into something general purpose.
 
 Next on the feature list is probably the loose type system and casting, starting with the addition of lists.
-They'll be sparse lists like python, and once they're finished I'm hoping I can introduce python2-style 
+They'll be sparse lists like Python, and once they're finished I'm hoping I can introduce Python2-style 
 for loops. Perhaps I'll add iterators at a later date, but for now I think we can deal with the performance
 of simple lists.
 
@@ -122,7 +122,7 @@ so I can get a bit closer to my original vision for the language. I just need to
 to over-engineer everything!
 
 [^1]: One day I'll figure out how to make my own Wisdom syntax highlighting on here (and in the IDE!)
-[^2]: It's dead slow at the moment, but it's still accurate. The python equivalent runs in less than a second
+[^2]: It's dead slow at the moment, but it's still accurate. The Python equivalent runs in less than a second
       but mine runs in just over 5 seconds. Performance can come later! I'll just keep adding language features first.
 [^3]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
 [^4]: https://en.wikipedia.org/wiki/Shunting-yard_algorithm
