@@ -3,6 +3,9 @@ title = "Giles Hutton"
 theme = "m10c"
 paginate = 10
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [menu]
 [[menu.main]]
 identifier = "code"

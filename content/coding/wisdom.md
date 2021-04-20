@@ -62,7 +62,7 @@ Perhaps it doesn't sound like much, but using just these features I've been able
 programs:
 
 ### Fibonacci Sequence
-```
+```rust
 fn fib(n: int) {
     let a = 1;
     let b = 1;
@@ -82,7 +82,7 @@ print(fib(20));
 ```
 
 ### Prime number counter[^2]
-```
+```rust
 fn primes_slow(limit: int) {
     let count = 2;
     let result = 0;

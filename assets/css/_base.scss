@@ -13,6 +13,16 @@ body {
   color: $light-color;
 }
 
+th, td {
+    border: 1px solid $light-color;
+    padding: 5px;
+}
+
+table {
+    border: 1px solid $light-color;
+    border-collapse: collapse;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $lightest-color;
 }
