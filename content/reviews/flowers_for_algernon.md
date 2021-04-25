@@ -1,7 +1,7 @@
 ---
 title: "Flowers for Algernon"
 date: 2021-04-25T15:35:23+01:00
-draft: true
+draft: false
 tags: ["reviews", "books"]
 categories: ["reviews"]
 summary: ""
