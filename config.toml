@@ -16,6 +16,10 @@ identifier = "writing"
 name = "Writing"
 url = "/writing"
 [[menu.main]]
+identifier = "reviews"
+name = "Reviews"
+url = "/reviews"
+[[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about"
