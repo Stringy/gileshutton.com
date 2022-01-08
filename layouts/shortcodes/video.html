@@ -1,0 +1,10 @@
+<div class="container" style="display: flex; align-items: center; justify-content: center">
+    <div id="player-wrapper">
+        <figure>
+            <video style="margin-left: auto; margin-right: auto; display: block;" width="50%" height="auto" controls autoplay loop>
+                <source src="{{ .Get 0 }}" type="video/webm">
+            </video>
+            <figcaption style="text-align: center;">{{ .Get 1 }}</figcaption>
+        </figure>
+    </div>
+</div>
