@@ -1,10 +1,10 @@
 ---
 title: "Tinker"
 date: 2022-01-08T15:01:56Z
-draft: true
+draft: false
 tags: ["coding", "tinker", "godot", "gamedev"]
 categories: ["code"]
-summary: ""
+summary: "A new project and a cautionary tale about decision paralysis."
 ---
 
 Recently I got a new job. This is perhaps not the most interesting piece of information in
@@ -12,9 +12,9 @@ the world, but it was long overdue and in fact only the second job I've had out 
 Again, not that interesting, but it gave me a few weeks of nothing between the two jobs and 
 to fill the time I started working on a little game.
 
-It started with little idea that I'd had rolling around my head for a few years. I wanted a 
+It started with an idea that I had rolling around my head for a few years. I wanted a 
 2D top-down survival / exploration game. The natural progression of that is some kind of
-procedurally generated world, possibly infinite, and then some kind of survival mechanics and
+procedurally generated world, possibly infinite, and then some survival mechanics and
 a reason for the player to actually play the game. My first thought was Minecraft but 2D. Not 
 the most original idea in the world, and probably way too much scope for a first game!
 
@@ -82,7 +82,7 @@ forward progress. I think on a project like this, momentum is so important to ke
 Plenty of other people have expressed this far better than me[^3] [^4], but for myself: churn on game features, not on technology or engine choice or language or whatever. Keep up the momentum.
 
 Turns out the terrain generation SEGFAULTs were caused by my attempts to update the `TileMap` from the generation
-thread, mostly because I misunderstood Godot signal behaviour in threads. Very simple to fix as it turns out, and 
+thread, mostly because I misunderstood Godot signal behaviour. Very simple to fix as it turns out, and 
 now the terrain is generating at a smooth 60 fps, even with thousands of terrain objects.
 
 Anyway, I hear bevy[^5] is the latest awesome technology in Rust gamedev so perhaps I should check it out ... ?
