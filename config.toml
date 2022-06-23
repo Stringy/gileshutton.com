@@ -27,7 +27,7 @@ url = "/about"
 [params]
 author = "Giles Hutton"
 description = "Programming and Writing of things."
-favicon = "static/favicon/favicon.ico"
+favicon = "/favicon/favicon.ico"
 avatar = "avatar.png"
 
 [[params.social]]
