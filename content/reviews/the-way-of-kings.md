@@ -2,7 +2,7 @@
 title: "The Way of Kings"
 date: 2022-06-23T18:14:34+01:00
 draft: false
-tags: ["reviews", "books"]
+tags: ["reviews", "books", "brandon-sanderson"]
 categories: ["reviews"]
 summary: "A behemoth if ever there was one."
 ---
