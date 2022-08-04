@@ -9,3 +9,4 @@ FROM nginx
 COPY --from=hugo /src/public /usr/share/nginx/html
 COPY container/nginx.conf /etc/nginx/nginx.conf
 
+#RUN nginx -t
