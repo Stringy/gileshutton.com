@@ -20,3 +20,11 @@ load: upload
 build-and-deploy: build load
 	ssh website -- "docker stop gileshutton.com || true"
 	ssh website -- docker run -d --rm -v /etc/letsencrypt/:/certs:ro -p 80:80 -p 443:443 --name gileshutton.com gileshutton.com:latest
+
+.PHONY: logs
+logs:
+	ssh website "docker logs gileshutton.com" > access.log 2>errors.log
+
+.PHONY: analyze-logs
+analyze-logs: logs
+	goaccess access.log --num-tests=0 --no-color
