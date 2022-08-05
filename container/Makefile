@@ -24,6 +24,10 @@ build-and-deploy: build load
 .PHONY: logs
 logs:
 	ssh website "docker logs gileshutton.com" > access.log 2>errors.log
+	
+.PHONY: follow-logs
+follow-logs:
+	ssh website "docker logs -f gileshutton.com"
 
 .PHONY: analyze-logs
 analyze-logs: logs
