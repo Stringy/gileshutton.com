@@ -32,3 +32,7 @@ follow-logs:
 .PHONY: analyze-logs
 analyze-logs: logs
 	goaccess access.log --num-tests=0 --no-color
+
+.PHONY: analyze-live
+analyze-live:
+	ssh website "docker logs -f gileshutton.com" 2>errors.log | goaccess --num-tests=0 --no-color -
