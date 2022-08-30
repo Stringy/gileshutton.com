@@ -31,12 +31,12 @@ follow-logs:
 
 .PHONY: analyze-logs
 analyze-logs: logs
-	goaccess access.log --ignore-crawlers --num-tests=0 --no-color
+	cat access.log | ./filter.py | goaccess - --ignore-crawlers --num-tests=0 --no-color
 
 .PHONY: analyze-logs-html
 analyze-logs-html: logs
-	goaccess access.log --ignore-crawlers --num-tests=0 -o report.html
+	cat access.log | ./filter.py | goaccess - --ignore-crawlers --num-tests=0 --no-color --report html
 
 .PHONY: analyze-live
 analyze-live:
-	ssh website "docker logs -f gileshutton.com" 2>errors.log | goaccess --ignore-crawlers --num-tests=0 --no-color -
+	ssh website "docker logs -f gileshutton.com" 2>errors.log | ./filter.py | goaccess --ignore-crawlers --num-tests=0 --no-color -
