@@ -2,9 +2,9 @@
 title: "The Job Redux"
 date: 2022-08-29T14:50:32+01:00
 draft: false
-tags: [“shortstory”, “firstperson”, “rewrite”]
-categories: [“shortstory”]
-summary: “Rewriting long forgotten snapshots of work”
+tags: ["shortstory", "firstperson", "rewrite"]
+categories: ["shortstory"]
+summary: "Rewriting long forgotten snapshots of work"
 ---
 
 Perhaps this will turn out to be a fruitless endeavour, but I rather like to think that my writing has improved in the several years in which I’ve been practicing. Many may disagree, but hardly anyone reads any of what I’ve written any way, so to the person sitting at the back of the hall heckling to their hearts content, I say this: I’m doing my best.
