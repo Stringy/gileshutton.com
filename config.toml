@@ -2,6 +2,7 @@ baseURL = "https://gileshutton.com"
 title = "Giles Hutton"
 theme = "m10c"
 paginate = 10
+copyright = "Copyright © 2019-2022 Giles Hutton. All Rights Reserved."
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -29,6 +30,7 @@ author = "Giles Hutton"
 description = "Programming and Writing of things."
 favicon = "/favicon/favicon.ico"
 avatar = "avatar.png"
+copyright = "Giles Hutton"
 
 [[params.social]]
 icon = "github"
