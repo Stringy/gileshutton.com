@@ -1,7 +1,7 @@
 ---
 title: "Progress Report 2"
 date: 2022-12-07T16:18:37Z
-draft: true
+draft: false
 tags: ["writing", "progress", "craft"]
 categories: ["writing"]
 summary: "Writing is hard. Did I ever mention that?"
