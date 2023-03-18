@@ -2,7 +2,7 @@ baseURL = "https://gileshutton.com"
 title = "Giles Hutton"
 theme = "m10c"
 paginate = 10
-copyright = "Copyright © 2019-2022 Giles Hutton. All Rights Reserved."
+copyright = "Copyright © 2019-2023 Giles Hutton. All Rights Reserved."
 
 [markup.goldmark.renderer]
 unsafe = true
