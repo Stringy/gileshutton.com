@@ -37,6 +37,11 @@ icon = "github"
 name = "Github"
 url = "https://github.com/stringy/"
 
+[[params.social]]
+icon = "mastodon"
+name = "Mastodon"
+url = "https://mastodon.social/@giles_h"
+
 # Red theme
 [params.style]
 darkestColor = "#284982"
