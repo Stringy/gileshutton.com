@@ -1,6 +1,6 @@
 baseURL = "https://gileshutton.com"
 title = "Giles Hutton"
-theme = "m10c"
+theme = "PaperMod"
 paginate = 10
 copyright = "Copyright © 2019-2023 Giles Hutton. All Rights Reserved."
 

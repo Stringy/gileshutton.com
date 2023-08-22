@@ -1,0 +1,77 @@
+baseURL: https://gileshutton.com
+title: Giles' Blerg
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+menu:
+  main:
+    - identifier: writing
+      name: Writing
+      url: /writing
+    - identifier: reviews
+      name: Reviews
+      url: /reviews
+    - identifier: about
+      name: About
+      url: /about
+    - identifier: code
+      name: Code
+      url: /coding
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+params:
+    env: production
+    description: "My bloggable random musings"
+    author: Giles Hutton
+
+    mainSections:
+      - writing
+      - reviews
+      - coding
+
+    defaultTheme: auto
+    ShowShareButtons: false
+    ShowReadingTime: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    UseHugoToc: true
+
+    profileMode:
+      enabled: false
+
+    homeInfoParams:
+      Title: "In which I cast my thoughts into the abyss."
+      Content: >
+        I write things and review films and books and other things. Sometimes I write code.
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/stringy"
+        - name: mastodon
+          url: "https://mastodon.social/@giles_h"
+
+    assets:
+      favicon: /favicon/favicon.ico
