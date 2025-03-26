@@ -1,6 +1,5 @@
 baseURL: https://gileshutton.com
 title: Giles' Blerg
-paginate: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -10,6 +9,9 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
+
+pagination:
+  pagerSize: 5
 
 menu:
   main:
